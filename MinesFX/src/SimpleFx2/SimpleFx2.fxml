@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane pickOnBounds="false" prefHeight="129.0" prefWidth="252.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SimpleFx2.MyController">
+  <columnConstraints>
+    <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="137.33334350585938" minHeight="20.0" prefHeight="71.33334350585938" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="100.66665649414062" minHeight="20.0" prefHeight="100.66665649414062" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="30.0" prefWidth="140.0" spacing="10.0">
+         <children>
+            <Button fx:id="a" mnemonicParsing="false" onAction="#upCounter" prefHeight="42.0" prefWidth="109.0" text="Ofra Haza">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="b" mnemonicParsing="false" onAction="#DownCounter" prefHeight="42.0" prefWidth="109.0" text="Yardena Arazi">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="label" alignment="CENTER" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="56.0" prefWidth="232.0" style="-fx-background-color: RED;" text="0" wrapText="true" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
